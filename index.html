@@ -9,6 +9,7 @@
       href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
       rel="stylesheet"
     />
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet" />
     <style>
       /* Custom animations */
       .fade-in {
@@ -173,7 +174,11 @@
       </div>
     </main>
 
-    <div class="image-container mb-8 fade-in">
+    <div
+      class="image-container mb-8"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <img
         src="https://cdn.dribbble.com/userupload/17238238/file/original-503c7f409ce567ca71b89bb73ca0c5fe.png"
         alt="Fund Crowdfunding"
@@ -181,7 +186,7 @@
       />
     </div>
 
-    <footer class="bg-gray-100 p-4">
+    <footer class="bg-gray-100 p-4" data-aos="fade-up" data-aos-duration="800">
       <div class="container mx-auto text-center">
         <p class="text-sm">© 2025 Dribbble</p>
         <ul class="flex justify-center space-x-4">
@@ -197,5 +202,9 @@
         </ul>
       </div>
     </footer>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
