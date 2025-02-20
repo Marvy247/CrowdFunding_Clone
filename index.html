@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fund - Crowdfunding Website</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom animations */
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .slide-up {
+        animation: slideUp 0.5s ease-in-out forwards;
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <header
+      class="flex items-center justify-between p-4 border-b border-gray-200"
+    >
+      <div class="flex items-center">
+        <img
+          alt="Dribbble logo"
+          class="h-10"
+          height="40"
+          src="https://storage.googleapis.com/a1aa/image/CZGyhJy4Va6_93GHi1MtOUgGvMFi8vrDImuKTkVxEpI.jpg"
+          width="100"
+        />
+        <div class="relative ml-4">
+          <input
+            class="pl-4 pr-10 py-2 rounded-full bg-gray-100 text-gray-600 focus:outline-none"
+            placeholder="What are you looking for?"
+            type="text"
+          />
+          <button
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 text-pink-500"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="flex items-center space-x-6 ml-4">
+        <div class="relative group">
+          <button class="text-gray-600 font-bold">
+            Shots
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden group-hover:block"
+          ></div>
+        </div>
+        <div class="relative group">
+          <button class="text-gray-600 font-bold">
+            Explore
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden group-hover:block"
+          >
+            <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100" href="#"
+              >Option 1</a
+            >
+            <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100" href="#"
+              >Option 2</a
+            >
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="text-gray-600 font-bold">
+            Hire a Designer
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden group-hover:block"
+          ></div>
+        </div>
+        <a class="text-gray-600 font-bold" href="#">Find Jobs</a>
+        <a class="text-gray-600 font-bold" href="#">Blog</a>
+        <a class="text-gray-600 font-bold" href="#">Sign up</a>
+        <a class="bg-black text-white px-4 py-2 rounded-full" href="#"
+          >Log in</a
+        >
+      </nav>
+    </header>
+
+    <main class="container w-2/3 mx-auto my-20">
+      <h1 class="text-2xl mt-8 font-bold text-left">
+        Fund - Crowdfunding Website Animations
+      </h1>
+
+      <div class="flex items-center mt-8">
+        <img
+          alt="Vektora logo"
+          class="h-12 w-12 rounded-full bg-green-500"
+          height="50"
+          src="https://storage.googleapis.com/a1aa/image/hJOzFwR_NHUSRPAaXzTsa7znIBoG9hR07HZjyysiVtQ.jpg"
+          width="50"
+        />
+
+        <div class="ml-4">
+          <p class="font-bold">Vektora</p>
+          <p class="text-green-500 text-sm">Available for work</p>
+          <a class="text-blue-500 text-sm" href="#">Follow</a>
+        </div>
+      </div>
+
+      <div
+        class="flex mt-8 justify-between space-x-4 items-center fade-in slide-up mb-8 pb-8"
+      >
+        <div>
+          <p class="slide-up">
+            <a href="#" class="text-blue-500">
+              <strong>www.vektora.studio</strong>
+            </a>
+          </p>
+        </div>
+        <div class="flex space-x-4 slide-up align-center">
+          <button
+            class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full"
+          >
+            <i class="far fa-heart"></i>
+          </button>
+
+          <button
+            class="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full"
+          >
+            <i class="far fa-bookmark"></i>
+          </button>
+
+          <button class="bg-black text-white px-4 py-2 rounded-full">
+            Get in touch
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="video-container mb-8 fade-in"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <video class="w-full max-w-4xl rounded-lg" controls autoplay loop muted>
+          <source
+            src="https://cdn.dribbble.com/userupload/17238239/file/small-d79b007524a6958e291b693cfb180736.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </main>
+
+    <div class="image-container mb-8 fade-in">
+      <img
+        src="https://cdn.dribbble.com/userupload/17238238/file/original-503c7f409ce567ca71b89bb73ca0c5fe.png"
+        alt="Fund Crowdfunding"
+        class="w-full rounded-lg"
+      />
+    </div>
+
+    <footer class="bg-gray-100 p-4">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">© 2025 Dribbble</p>
+        <ul class="flex justify-center space-x-4">
+          <li>
+            <a href="#" class="text-gray-600 hover:text-blue-500">Terms</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-blue-500">Privacy</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-blue-500">Cookies</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
