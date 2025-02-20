@@ -10,36 +10,6 @@
       rel="stylesheet"
     />
     <link href="./node_modules/aos/dist/aos.css" rel="stylesheet" />
-    <style>
-      /* Custom animations */
-      .fade-in {
-        animation: fadeIn 0.5s ease-in-out forwards;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      .slide-up {
-        animation: slideUp 0.5s ease-in-out forwards;
-      }
-
-      @keyframes slideUp {
-        from {
-          transform: translateY(20px);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-    </style>
   </head>
   <body class="bg-white text-gray-800">
     <header
@@ -172,7 +142,7 @@
           Your browser does not support the video tag.
         </video>
       </div>
-
+      <!-- nav under video -->
       <div>
         <nav class="flex items-center justify-between p-4">
           <div class="flex items-center space-x-2">
@@ -198,20 +168,21 @@
           </div>
         </nav>
       </div>
+      <!-- fund help others -->
       <div class="image-container rounded-lg mb-8">
         <img src="public/fund.png" alt="Fund Image" class="w-full rounded-lg" />
       </div>
       <!-- fund fast as flash -->
-      <div class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold mb-2">
+      <div class="container mx-auto px-4 py-12" data-aos="fade-up">
+        <h1 class="text-4xl font-bold mb-2" data-aos="fade-right">
           Fund, Fast As <span class="italic">Flash</span>
         </h1>
-        <p class="text-lg text-gray-500 mb-8">
+        <p class="text-lg text-gray-500 mb-8" data-aos="fade-left">
           Fundraise at the speed of thought! Elevate your cause in just a minute
           with our lightning-fast fundraising platform.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-gray-100 shadow-md rounded-lg p-6">
+          <div class="bg-gray-100 shadow-md rounded-lg p-6" data-aos="zoom-in">
             <div class="flex justify-start mb-4">
               <div class="bg-green-100 rounded-full p-4">
                 <i class="fas fa-lock text-green-500 text-2xl"></i>
@@ -226,7 +197,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-gray-100 shadow-md rounded-lg p-6">
+          <div class="bg-gray-100 shadow-md rounded-lg p-6" data-aos="zoom-in">
             <div class="flex justify-start mb-4">
               <div class="bg-green-100 rounded-full p-4">
                 <i class="fas fa-bolt text-green-500 text-2xl"></i>
@@ -240,7 +211,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-gray-100 shadow-md rounded-lg p-6">
+          <div class="bg-gray-100 shadow-md rounded-lg p-6" data-aos="zoom-in">
             <div class="flex justify-start mb-4">
               <div class="bg-green-100 rounded-full p-4">
                 <i class="fas fa-globe text-green-500 text-2xl"></i>
@@ -257,14 +228,19 @@
         </div>
       </div>
       <!-- urgent fundraising -->
-      <div class="max-w-7xl mx-auto p-4">
-        <h1 class="text-3xl font-bold mb-2">Urgent Fundraising!</h1>
-        <p class="text-gray-600 mb-6">
+      <div class="max-w-7xl mx-auto p-4" data-aos="fade-up">
+        <h1 class="text-3xl font-bold mb-2" data-aos="fade-right">
+          Urgent Fundraising!
+        </h1>
+        <p class="text-gray-600 mb-6" data-aos="fade-left">
           Time is of the essence! Join our mission NOW to make an immediate
           impact. Every second counts!
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden"
+            data-aos="zoom-in"
+          >
             <img
               alt="Person wearing yellow gloves planting a small plant in the ground"
               class="w-full h-48 object-cover"
@@ -287,7 +263,10 @@
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden"
+            data-aos="zoom-in"
+          >
             <img
               alt="Person in a wheelchair being assisted by another person"
               class="w-full h-48 object-cover"
@@ -310,7 +289,10 @@
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden"
+            data-aos="zoom-in"
+          >
             <img
               alt="Group of people in green shirts distributing aid"
               class="w-full h-48 object-cover"
@@ -319,7 +301,7 @@
               width="600"
             />
             <div class="p-4">
-              <p class="text-sm text-gray-500">Unity Foundation</p>
+              <p class="text-sm text-gray -500">Unity Foundation</p>
               <h2 class="text-lg font-bold">DisasterCare: Urgent Support</h2>
               <p class="text-xl font-bold text-gray-800 mt-2">$2,100.210</p>
               <div class="flex items-center justify-between mt-2">
@@ -336,9 +318,9 @@
         </div>
       </div>
       <!-- Join Fundraisers now -->
-      <div class="flex flex-col items-center mt-8 pt-8">
+      <div class="flex flex-col items-center mt-8 pt-8" data-aos="fade-up">
         <div class="flex justify-between w-full max-w-4xl mb-4">
-          <div class="flex flex-col justify-between">
+          <div class="flex flex-col justify-between" data-aos="zoom-in">
             <img
               alt="Black and white image of a child"
               class="w-24 h-32 object-cover rounded mb-4"
@@ -354,7 +336,7 @@
               width="100"
             />
           </div>
-          <div class="flex flex-col items-center px-8">
+          <div class="flex flex-col items-center px-8" data-aos="fade-left">
             <h2 class="text-lg font-normal text-gray-700 mb-2">
               Be The Part Of FundRaisers With Over
             </h2>
@@ -364,11 +346,12 @@
             </h3>
             <button
               class="bg-lime-500 text-white text-lg font-bold py-2 px-6 rounded-full hover:bg-lime-600 transition duration-300"
+              data-aos="pulse"
             >
               Join FundRaisers Now!
             </button>
           </div>
-          <div class="flex flex-col justify-between">
+          <div class="flex flex-col justify-between" data-aos="zoom-in">
             <img
               alt="Black and white image of children"
               class="w-24 h-32 object-cover rounded mb-4"
@@ -387,28 +370,50 @@
         </div>
       </div>
       <!-- FAQ -->
-      <div class="max-w-4xl mx-auto mt-8 pt p-6">
-        <h1 class="text-3xl font-bold mb-6">Frequently Asked Questions.</h1>
+      <div class="max-w-4xl mx-auto mt-8 pt p-6" data-aos="fade-up">
+        <h1 class="text-3xl font-bold mb-6" data-aos="fade-down">
+          Frequently Asked Questions.
+        </h1>
         <div class="space-y-4">
-          <div class="flex justify-between items-center border-b py-4">
+          <div
+            class="flex justify-between items-center border-b py-4"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             <span class="text-lg">How Can I Make Donation?</span>
             <i class="fas fa-plus"></i>
           </div>
-          <div class="flex justify-between items-center border-b py-4">
+          <div
+            class="flex justify-between items-center border-b py-4"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <span class="text-lg">Is My Donation Tax-Deductible?</span>
             <i class="fas fa-plus"></i>
           </div>
-          <div class="flex justify-between items-center border-b py-4">
+          <div
+            class="flex justify-between items-center border-b py-4"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
             <span class="text-lg"
               >Can I Donate In Honor Or Memory Of Someone?</span
             >
             <i class="fas fa-plus"></i>
           </div>
-          <div class="flex justify-between items-center border-b py-4">
+          <div
+            class="flex justify-between items-center border-b py-4"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             <span class="text-lg">How Will My Donation Be Used?</span>
             <i class="fas fa-plus"></i>
           </div>
-          <div class="flex justify-between items-center border-b py-4">
+          <div
+            class="flex justify-between items-center border-b py-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
             <span class="text-lg">Can I Set Up A Recurring Donation?</span>
             <i class="fas fa-plus"></i>
           </div>
@@ -416,10 +421,10 @@
       </div>
     </main>
 
-    <footer class="bg-black text-white py-8">
+    <footer class="bg-black text-white py-8" data-aos="fade-up">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="mb-6 md:mb-0">
+          <div class="mb-6 md:mb-0" data-aos="fade-right">
             <div class="flex items-center mb-4">
               <img
                 alt="Logo"
@@ -434,7 +439,10 @@
               Elevating Experience &amp; Seize Control Of Your Smart Home!
             </p>
           </div>
-          <div class="flex flex-col md:flex-row md:space-x-12 mb-6 md:mb-0">
+          <div
+            class="flex flex-col md:flex-row md:space-x-12 mb-6 md:mb-0"
+            data-aos="fade-left"
+          >
             <div class="mb-4 md:mb-0">
               <h3 class="font-semibold mb-2">Donate</h3>
               <ul class="space-y-1 text-sm">
@@ -466,12 +474,15 @@
         </div>
         <div
           class="border-t border-gray-700 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center"
+          data-aos="fade-up"
         >
           <p class="text-sm mb-4 md:mb-0">©FundInc.2023 All Rights Reserved.</p>
           <div class="flex space-x-4">
             <a
               class="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full"
               href="#"
+              data-aos="zoom-in"
+              data-aos-delay="100"
             >
               <i class="fab fa-instagram"> </i>
               <span> Instagram </span>
@@ -479,6 +490,8 @@
             <a
               class="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full"
               href="#"
+              data-aos="zoom-in"
+              data-aos-delay="200"
             >
               <i class="fab fa-facebook"> </i>
               <span> Facebook </span>
@@ -486,6 +499,8 @@
             <a
               class="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full"
               href="#"
+              data-aos="zoom-in"
+              data-aos-delay="300"
             >
               <i class="fab fa-twitter"> </i>
               <span> Twitter </span>
@@ -493,6 +508,8 @@
             <a
               class="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full"
               href="#"
+              data-aos="zoom-in"
+              data-aos-delay="400"
             >
               <i class="fab fa-linkedin"> </i>
               <span> LinkedIn </span>
@@ -503,7 +520,9 @@
     </footer>
     <script src="./node_modules/aos/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 1000, // Default duration for all animations
+      });
     </script>
   </body>
 </html>
